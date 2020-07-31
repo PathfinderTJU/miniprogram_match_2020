@@ -1,0 +1,57 @@
+/**app.wxss**/
+@import "/style/iconfont.wxss";
+
+@font-face {
+  font-family: 'puhui-regular';
+  font-display: swap;
+  src: url('https://at.alicdn.com/t/webfont_910etcebkmg.eot'); /* IE9*/
+  src: url('https://at.alicdn.com/t/webfont_910etcebkmg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('https://at.alicdn.com/t/webfont_910etcebkmg.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_910etcebkmg.woff') format('woff'), /* chrome、firefox */
+  url('https://at.alicdn.com/t/webfont_910etcebkmg.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('https://at.alicdn.com/t/webfont_910etcebkmg.svg#AlibabaPuHuiTiL') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'puhui-heavy';
+  font-display: swap;
+  src: url('https://at.alicdn.com/t/webfont_sm24gm1gbbr.eot'); /* IE9*/
+  src: url('https://at.alicdn.com/t/webfont_sm24gm1gbbr.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('https://at.alicdn.com/t/webfont_sm24gm1gbbr.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_sm24gm1gbbr.woff') format('woff'), /* chrome、firefox */
+  url('https://at.alicdn.com/t/webfont_sm24gm1gbbr.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('https://at.alicdn.com/t/webfont_sm24gm1gbbr.svg#AlibabaPuHuiTiH') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'puhui-medium';
+  font-display: swap;
+  src: url('https://at.alicdn.com/t/webfont_nsdo2f3juk.eot'); /* IE9*/
+  src: url('https://at.alicdn.com/t/webfont_nsdo2f3juk.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('https://at.alicdn.com/t/webfont_nsdo2f3juk.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_nsdo2f3juk.woff') format('woff'), /* chrome、firefox */
+  url('https://at.alicdn.com/t/webfont_nsdo2f3juk.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('https://at.alicdn.com/t/webfont_nsdo2f3juk.svg#AlibabaPuHuiTiM') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'puhui-bold';
+  font-display: swap;
+  src: url('https://at.alicdn.com/t/webfont_6tyxns6wm3.eot'); /* IE9*/
+  src: url('https://at.alicdn.com/t/webfont_6tyxns6wm3.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('https://at.alicdn.com/t/webfont_6tyxns6wm3.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_6tyxns6wm3.woff') format('woff'), /* chrome、firefox */
+  url('https://at.alicdn.com/t/webfont_6tyxns6wm3.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('https://at.alicdn.com/t/webfont_6tyxns6wm3.svg#Alibaba-PuHuiTi-Bold') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: 'puhui-regular';
+  font-display: swap;
+  src: url('https://at.alicdn.com/t/webfont_0ceqgx3nl06s.eot'); /* IE9*/
+  src: url('https://at.alicdn.com/t/webfont_0ceqgx3nl06s.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('https://at.alicdn.com/t/webfont_0ceqgx3nl06s.woff2') format('woff2'),
+  url('https://at.alicdn.com/t/webfont_0ceqgx3nl06s.woff') format('woff'), /* chrome、firefox */
+  url('https://at.alicdn.com/t/webfont_0ceqgx3nl06s.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('https://at.alicdn.com/t/webfont_0ceqgx3nl06s.svg#Alibaba-PuHuiTi-Regular') format('svg'); /* iOS 4.1- */
+}

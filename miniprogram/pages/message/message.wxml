@@ -1,0 +1,18 @@
+<!--miniprogram/pages/message/message.wxml-->
+<view class="outside_block">
+  <view class="title_block">填写留言信息</view>
+  <view class="form_block">
+    <form bindsubmit="submit" id="message_form">
+      <view class="edit">
+        <view class="edit_title">您的称呼:</view>
+        <input class="edit_input" placeholder="请输入纯字符" maxlength="20" name="name"></input>
+      </view>
+      <view class="edit">
+        <view class="edit_title">拾到物品地点:</view>
+        <view id="choose_loaction" bindtap="choose_location">点击选择位置</view>
+      </view>
+      <view class="edit" name="location">{{location}}</view>
+      <button type="primary" id="send_button" form-type="submit">发送</button>
+    </form>
+  </view>
+</view>

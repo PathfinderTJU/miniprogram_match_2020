@@ -1,0 +1,9 @@
+<!--miniprogram/pages/QR/QR.wxml-->
+<view class="outside_block">
+  <view class="title_block">物品小程序码</view>
+  <image class="QR_block" mode="widthFix" src="{{fileId}}" bindtap="preview"></image>
+  <view class="button_block">
+    <button id="generate" type="primary" bindtap="generate">生成二维码</button>
+    <!-- <button id="save" type="warn" bindtap="save">保存到手机</button> -->
+  </view>
+</view>

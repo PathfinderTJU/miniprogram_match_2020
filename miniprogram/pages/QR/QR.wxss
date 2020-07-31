@@ -1,0 +1,42 @@
+/* miniprogram/pages/QR/QR.wxss */
+page{
+  height: 100%;
+}
+
+.outside_block{
+  height: 100%;
+  padding: 0 60rpx;
+  font-family: "puhui-regular";
+}
+
+.title_block{
+  padding-top: 100rpx;
+  text-align: center;
+  font-size: 38rpx;
+  color: gray;
+}
+
+.QR_block{
+  margin: 100rpx 0;
+  width: 100%;
+}
+
+.button_block{
+  width: 100%;
+}
+
+/* #generate{
+  width: 100%;
+  background-color: white;
+  color: #E36637;
+  margin-bottom: 50rpx;
+} */
+
+#generate{
+  box-shadow: 0 3px 5px rgb(199, 199, 199);
+  border-radius: 40rpx;
+  height: 80rpx;
+  width: 100%;
+  background-color: #E36637;
+  color: white;
+}

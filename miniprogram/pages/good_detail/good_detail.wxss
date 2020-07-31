@@ -1,0 +1,147 @@
+/* miniprogram/pages/good_detail/good_detail.wxss */
+page{
+  height: 100%;
+}
+
+.outside_block{
+  height: 100%;
+}
+
+.background_image{
+  height: 40%;
+  width: 100%;
+  position: relative;
+}
+
+.mask{
+  width: 100%;
+  height: 83.3%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  position: absolute;
+  bottom: 0;
+}
+
+.background_image image{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -200;
+}
+
+.info_block{
+  position: absolute;
+  bottom: 0;
+  height: 70%;
+  z-index: 200;
+  padding: 0 75rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.info_title{
+  padding-bottom: 50rpx;
+  width: 100%;
+  font-family: "puhui-bold";
+  font-size: 28px;
+  letter-spacing: -50;
+}
+
+.edit_block{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.edit_content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35rpx;
+}
+
+.content_name{
+  width: 25%;
+  font-size: 16px;
+  font-family: "puhui-medium";
+  color: gray;
+}
+
+.content_value{
+  width: 65%;
+}
+
+#QR_button{
+  color: rgb(184, 182, 182);
+}
+
+.button_block{
+  margin-bottom: 75rpx;
+
+}
+
+.button_block button{
+  border-radius: 40rpx;
+  height: 80rpx;
+  font-family: "puhui-regular";
+  font-weight: normal;
+  width: 100%;
+}
+
+#name_input, #contact_input{
+  padding-bottom: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2rpx;
+  border-bottom-color: gainsboro;
+  font-family: "puhui-bold";
+}
+
+#describtion_input{
+  height: 110rpx;
+  padding: 5rpx;
+  border-style: solid;
+  border-width: 2rpx;
+  border-color: gainsboro;
+}
+
+.button_block{
+  width: 100%;
+}
+
+.button_block button{
+  box-shadow: 0 3px 5px rgb(199, 199, 199);
+}
+
+#confirm_button{
+  width: 100%;
+  background-color: #E36637;
+  color: white;
+  margin-bottom: 30rpx;
+}
+
+#delete_button{
+  width: 100%;
+  color: #E36637;
+}
+
+.back_button{
+  position: fixed;
+  top: 100rpx;
+  left: 30rpx;
+  z-index: 500;
+}
+
+.icon-back{
+  font-size: 50rpx;
+}
+
+.status_content_value{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.status_value{
+  margin-left: 30rpx;
+}

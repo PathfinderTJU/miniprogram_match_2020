@@ -1,0 +1,27 @@
+<!--miniprogram/pages/find/find.wxml-->
+<view class="outside_block">
+  <view class="title_block">
+    <view class="main_title">帮助它们</view>
+    <view class="main_title">找到自己的主人</view>
+    <view class="sub_title">它们的主人现在一定很焦虑！</view>
+  </view>
+  <view wx:if="{{!hasLocation}}" class="location_block">
+    <view class="location_tip">无法获取您的位置信息</view>
+    <view class="loaction_tip">请打开定位并授权定位信息</view>
+    <button class="location_button" open-type="openSetting" type="primary">打开授权页面</button>
+  </view>
+  <view wx:elif="{{!hasGoods}}" class="none_block">暂时没有物品~</view>
+  <view wx:else class="goods_block">
+    <view class="good_title">丢失物品</view>
+    <block wx:for="{{goods}}">
+      <view class="good" bindtap="toDetail" data-id="{{item['_id']}}">
+        <image src="{{item.goodsUrl}}" class="good_image" mode="aspectFill" lazy-load="true"></image>
+        <view class="good_info">
+          <view class="good_name">{{item.goodsName}}</view>
+          <view class="good_time">{{item.loseTime <= 60 ? item.loseTime + "分钟前" : "大于1小时"}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="add_button" bindtap="toAdd"><text class="iconfont icon-add"></text></view>

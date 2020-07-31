@@ -1,0 +1,54 @@
+/* miniprogram/pages/login/login.wxss */
+page{
+  width: 100%;
+  background-color: #1A2A49;
+}
+
+.outside_block{
+  width: 100%;
+  height: 100%;
+}
+
+.logo_block{
+  width: 100%;
+  text-align: center;
+  margin-top: 200rpx;
+}
+
+#logo{
+  width: 300rpx;
+  height: 300rpx;
+  border-radius: 100rpx;
+}
+
+.button_block{
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  text-align: center;
+}
+
+#user_login{
+  width: 400rpx;
+  height: 120rpx;
+  border-radius: 50rpx;
+  background-color: #E36637;
+  color: white;
+  font-weight: normal;
+  /* box-shadow: 0 5px 5px rgb(143, 143, 143); */
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+}
+
+#user_login view{
+  font-size: 40rpx;
+  width: 100%;
+  justify-self: center;
+  align-self: center;
+}
+
+#admin_login{
+  margin-top: 60rpx;
+  color: rgb(177, 176, 176);
+}

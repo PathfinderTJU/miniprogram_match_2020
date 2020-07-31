@@ -1,0 +1,10 @@
+/* miniprogram/pages/about/about.wxss */
+page{
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+image{
+  width: 100%;
+}

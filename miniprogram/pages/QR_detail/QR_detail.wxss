@@ -1,0 +1,128 @@
+/* miniprogram/pages/QR_detail/QR_detail.wxss */
+page{
+  height: 100%;
+}
+
+.outside_block{
+  height: 100%;
+}
+
+.background_image{
+  height: 65%;
+  width: 100%;
+}
+
+.info_block{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 45%;
+  z-index: 200;
+  background-color: white;
+  border-top-left-radius: 75rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.info{
+  width: 100%;
+  padding: 0 75rpx;
+}
+
+.name_time_block{
+  margin-top: 75rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name{
+  font-size: 28px;
+}
+
+.time{
+  height: 100%;
+  font-family: "puhui-medium";
+  color: #E36637;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.location_block{
+  font-family: "puhui-regular";
+  color: rgb(170, 170, 170);
+  margin-top: 15px;
+  display: flex;
+  font-size: 12px;
+}
+
+.describtion_block{
+  height: 60px;
+  margin-top: 15px;
+  line-height: 20px;
+  font-size: 12px;
+  overflow: auto;
+  text-align: justify;
+  -webkit-overflow-scrolling: touch
+}
+
+#return_button{
+  margin:0 75rpx 75rpx 75rpx;
+  background-color: #E36637;  
+  border-radius: 40rpx;
+  height: 80rpx;
+  color: white;
+  font-family: "puhui-regular";
+  font-weight: normal;
+  width: 100%;
+}
+
+.line_block{
+  border-style: solid;
+  border-width: 1rpx;
+  border-color: rgb(190, 190, 190);
+  margin: 30rpx 0;
+}
+
+.contact_block{
+  font-family: "puhui-medium";
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.home_button{
+  position: fixed;
+  top: 100rpx;
+  left: 30rpx;
+  z-index: 500;
+}
+
+.icon-home{
+  font-size: 50rpx;
+}
+
+.icon_block{
+  padding-top: 40%;
+  text-align: center;
+}
+
+.success_tip{
+  margin-top: 50rpx;
+}
+
+.success_tip, .thanks{
+  text-align: center;
+  font-size: 40rpx;
+}
+
+.copyright_block{
+  display: block;
+  position: absolute;
+  text-align: center;
+  bottom: 50rpx;
+  width: 100%;
+  color: #a0a0a0;
+  font-size: 30rpx;
+}

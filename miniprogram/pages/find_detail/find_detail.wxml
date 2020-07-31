@@ -1,0 +1,19 @@
+<!--miniprogram/pages/find_detail/find_detail.wxml-->
+<view class="outside_block">
+  <image class="background_image" src="{{url}}" mode="aspectFill"></image>
+  <view class="info_block">
+    <view class="info">
+      <view class="name_time_block">
+        <view class="name">{{name}}</view>
+        <view class="time" wx:if="{{time < 60}}">{{time}}分钟前发布</view>
+        <view class="time" wx:else>大于1小时前发布</view>
+      </view>
+      <view class="location_block">
+        <text class="iconfont icon-location"></text>
+        <view class="location">{{distance}}km</view>
+      </view>
+      <view class="describtion_block">{{describtion}}</view>
+    </view>
+    <button id="return_button" bindtap="back" type="primary">返回</button>
+  </view>
+</view>

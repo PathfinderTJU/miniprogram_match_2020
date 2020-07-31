@@ -1,0 +1,26 @@
+<!--miniprogram/pages/index/index.wxml-->
+<view class="outside_block">
+  <view class="title_block">
+    <view class="main_title">众里寻他千百度</view>
+    <view class="main_title">不如拾物TJU处</view>
+    <view class="sub_title">让物品不再凭空消失</view>
+  </view>
+  <view class="goods_block">
+    <view class="good_title">近期物品</view>
+    <block wx:for="{{goods}}">
+      <view class="good" data-id="{{item.goods_id}}" bindtap="toItem">
+        <image class="good_image" src="{{item.goodsUrl}}" mode="aspectFill" lazy-load="true"></image>
+        <view wx:if="{{item.loseLabel === 0}}" class="content_block unlost">
+          <view class="good_name">{{item.goodsName}}</view>
+          <view class="good_status">未丢失</view>
+        </view>
+        <view wx:else class="content_block lost">
+          <view class="good_name">{{item.goodsName}}</view>
+          <view class="good_status">丢失</view>
+        </view>
+      </view>
+    </block>
+    <view wx:if="{{!hasGoods}}" class="none_block">暂时没有物品</view>
+  </view>
+  <view hidden="{{!hasGoods}}" class="show_more" bindtap="toMore">查看全部</view>
+</view>

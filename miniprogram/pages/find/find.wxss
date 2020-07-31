@@ -1,0 +1,100 @@
+/* miniprogram/pages/find/find.wxss */
+.outside_block{
+  height: 100%;
+  padding: 60rpx;
+}
+
+.title_block{
+  font-family: "puhui-bold";
+  font-size: 28px;
+  letter-spacing:-50;
+}
+
+.main_title{
+  letter-spacing: -50;
+}
+
+.sub_title{
+  font-size: 45rpx;
+  color: rgb(150, 150, 150);
+}
+
+.goods_block{
+  margin-top: 50rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.good_title{
+  width: 100%;
+  font-family: "puhui-bold";
+  font-size: 40rpx;
+  margin-bottom: 50rpx;
+}
+
+.good{
+  width: 285rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.good_image{
+  height: 285rpx;
+  width: 285rpx;
+  border-radius: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.good_info{
+  width: 100%;
+  display: flex;
+  margin-bottom: 20rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .good_name{
+  font-family: "puhui-bold";
+} */
+
+.good_time{
+  font-family: "puhui-regular";
+  font-size: 25rpx;
+}
+
+.add_button{
+  position: fixed;
+  bottom: 100rpx;
+  right: 100rpx;
+  background-color: #E36637;
+  width: 100rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50rpx;
+  box-shadow: 0 0 10px rgb(173, 173, 173);
+}
+
+.icon-add{
+  font-size: 50rpx;
+}
+
+.location_block{
+  text-align: center;
+  margin-top: 50rpx;
+  font-family: "puhui-regular"
+}
+
+.location_button{
+  margin-top: 50rpx;
+}
+
+.none_block{
+  margin-top: 200rpx;
+  text-align: center;
+  font-family: "puhui-regular";
+  color: gray;
+}

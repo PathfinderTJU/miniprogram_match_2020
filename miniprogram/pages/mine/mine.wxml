@@ -1,0 +1,22 @@
+<!--miniprogram/pages/mine/mine.wxml-->
+<view class="outside_block">
+  <view class="info_block">
+    <image src="{{avatarUrl}}" class="avatar_block"></image>
+    <view wx:if="{{hasLog}}" class="nickName_block">{{nickName}}</view>
+    <button wx:else class="nickName_block" open-type="getUserInfo" bindgetuserinfo="getUserInfo">请点击登录</button>
+  </view>
+  <view class="choose_block">
+    <view class="help_block" bindtap="toHelp">
+      <view class="tip">帮助</view>
+      <view class="number">></view>
+    </view>
+    <view class="abput_block" bindtap="toAbout">
+      <view class="tip">关于我们</view>
+      <view class="number">></view>
+    </view>
+    <view class="version_block">
+      <view class="tip">当前版本</view>
+      <view class="number">2.0.0</view>
+    </view>
+  </view>
+</view>

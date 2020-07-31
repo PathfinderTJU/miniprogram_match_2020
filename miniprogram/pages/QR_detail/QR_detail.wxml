@@ -1,0 +1,32 @@
+<!--miniprogram/pages/QR_detail/QR_detail.wxml-->
+<view class="home_button" bindtap="home"><text class="iconfont icon-home"></text></view>
+<view wx:if="{{name !== ''}}" class="outside_block">
+  <image class="background_image" src="{{url}}" mode="aspectFill"></image>
+  <view class="info_block">
+    <view class="info">
+      <view class="name_time_block">
+        <view class="name">{{name}}</view>
+        <view class="time" wx:if="{{time < 60}}">{{time}}分钟前发布</view>
+        <view class="time" wx:else>大于1小时前发布</view>
+      </view>
+      <view class="describtion_block">{{describtion}}</view>
+      <view class="line_block"></view>
+      <view class="contact_block">
+        <view>失主联系方式：</view>
+        <view>电话号码：{{contact}}</view>
+      </view>
+    </view>
+    <button id="return_button" bindtap="toMessage" type="primary">留言</button>
+  </view>
+</view>
+<view wx:else class="outside_block">
+  <view class="icon_block" >
+    <icon type="warn" size="50" id="success_icon" />
+  </view>
+  <view class="success_tip">该物品未丢失</view>
+
+  <view class="copyright_block">
+    <view id="name">XY&HXstudio提供技术支持</view>
+    <view id="copyright">CopyRight©TJU-CIC lxy&lhx 2020.06</view>
+  </view>
+</view>

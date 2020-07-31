@@ -1,0 +1,35 @@
+<!--miniprogram/pages/goods/goods.wxml-->
+<view class="outside_block">
+  <view class="title_block">
+    <view class="title">我的物品</view>
+  </view>
+  <view class="type_block">
+    <view class="type {{nowType === 0 ? 'select' : ''}}" id="all_type" data-type="0" bindtap="changeType">全部 ({{numbers}})</view>
+    <view class="type {{nowType === 1 ? 'select' : ''}}" id="thing_type" data-type="1" bindtap="changeType">物品 ({{numberOfThing}})</view>
+    <view class="type {{nowType === 2 ? 'select' : ''}}" id="child_type" data-type="2" bindtap="changeType">孩童 ({{numberOfChild}})</view>
+  </view>
+  <view class="goods_block">
+    <block wx:for="{{goods}}">
+      <slide-delete data-id="{{item.goods_id}}" pid="{{item.goods_id}}" bindaction="handleSlideDelete">
+        <view class="good_view" data-id="{{item.goods_id}}" bindtap="toDetail">
+          <image class="good_image" src="{{item.goodsUrl}}" mode="aspectFill" lazy-load="true"></image>
+          <view class="good_info">
+            <view class="good_name">{{item.goodsName}}</view>
+            <view class="good_describtion">{{item.goodsInfo}}</view>
+          </view>
+          <view class="good_status">
+            <view class="status {{item.loseLabel === 0 ? '' : 'lost'}}">{{item.loseLabel === 0 ? "未丢失" : "丢失中"}}</view>
+            <view wx:if="{{item.loseLabel === 1}}" class="time">
+              <text wx:if="{{item.create_time <= 30 && item.create_time > 0}}">{{item.create_time + 1}}天前</text>
+              <text wx:elif="{{item.create_time === 0}}">小于1天前</text>
+              <text wx:else>超过30天</text>
+            </view>
+          </view>
+        </view>
+      </slide-delete>
+    </block>
+    <view wx:if="{{!hasGoods}}" class="none_block">暂时没有物品</view>
+  </view>
+</view>
+<view class="add_button" bindtap="toAdd"><text class="iconfont icon-add"></text></view>
+

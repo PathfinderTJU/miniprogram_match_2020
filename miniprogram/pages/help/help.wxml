@@ -1,0 +1,3 @@
+<!--miniprogram/pages/help/help.wxml-->
+<image src="https://7465-test-260nv-1302190356.tcb.qcloud.la/help_2.jpg?sign=10e09612b93571bc8a857626b07d47be&t=1592206214" mode="widthFix"></image>
+<image src="https://7465-test-260nv-1302190356.tcb.qcloud.la/help_1.jpg?sign=f153ab0dead6a111881b66f0b41a4af3&t=1592206204" mode="widthFix"></image>

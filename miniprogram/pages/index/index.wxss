@@ -1,0 +1,88 @@
+/* miniprogram/pages/index/index.wxss */
+.outside_block{
+  height: 100%;
+  padding: 60rpx;
+}
+
+.title_block{
+  font-family: "puhui-bold" !important;
+  font-size: 28px;
+  /* letter-spacing:-50; */
+}
+
+.sub_title{
+  font-size: 45rpx;
+  color: rgb(150, 150, 150);
+}
+
+.goods_block{
+  margin-top: 50rpx;
+}
+
+.good_title{
+  font-family: "puhui-bold";
+  font-size: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.good{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30rpx 0;
+}
+
+.good_image{
+  width: 100%;
+  height: 400rpx;
+  border-radius: 50rpx;
+  box-shadow: 2px 4px 10px rgb(218, 216, 216);
+}
+
+.content_block{
+  height: 130rpx;
+  border-bottom-right-radius: 50rpx;
+  border-bottom-left-radius: 50rpx;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 40rpx;
+  z-index: 100;
+  margin-top: -130rpx;
+  justify-content: space-between;
+}
+
+.lost{
+  background-image: linear-gradient(to right, #E36637, rgb(239,152,120, 0.96));
+  color: white;
+}
+
+.unlost{
+  background-image: linear-gradient(to right, white, rgb(255,255,255,0.95));
+}
+
+.good_name{
+  font-size: 40rpx;
+}
+
+.good_status{
+  font-family: "puhui-regular";
+  font-size: 34rpx;
+  margin-right: 20rpx;
+}
+
+.show_more{
+  margin-top: 50rpx;
+  text-align: center;
+  font-family: "puhui-regular";
+  color: rgb(170, 170, 170);
+  font-size: 36rpx;
+}
+
+.none_block{
+  margin-top: 200rpx;
+  text-align: center;
+  font-family: "puhui-regular";
+  color: gray;
+}

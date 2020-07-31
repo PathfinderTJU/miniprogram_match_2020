@@ -1,0 +1,11 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class="outside_block">
+  <view class="logo_block">
+    <image id="logo" src="https://7465-test-260nv-1302190356.tcb.qcloud.la/logo.png?sign=867f7efc9061d7803ec7664a7b9f869b&t=1592191216"></image>
+  </view>
+
+  <view class="button_block">
+    <button id="user_login" bindtap="toLogin"><view>用户登录</view></button>
+    <!-- <view id="admin_login" bindtap="toAdmin">管理员登录</view> -->
+  </view>
+</view>

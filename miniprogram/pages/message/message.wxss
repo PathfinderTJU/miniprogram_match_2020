@@ -1,0 +1,65 @@
+/* miniprogram/pages/message/message.wxss */
+.outside_block{
+  height: 100%;
+  padding: 75rpx;
+}
+
+.outside_block > view{
+  display: border-box;
+  width: 100%;
+}
+
+.title_block{
+  width: 100%;
+  font-family: "puhui-bold";
+  font-size: 50rpx;
+  word-spacing: -50;
+  margin-bottom: 75rpx;
+}
+
+.form_block{
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(95, 95, 95);
+  width: 100%;
+}
+
+.edit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50rpx;
+  width: 100%;
+}
+
+#message_form{
+  width: 100%;
+}
+
+.edit_title{
+  width: 50%;
+  font-size: 30rpx;
+  font-family: "puhui-medium";
+}
+
+.edit_input{
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 1rpx;
+  padding: 1rpx;
+  font-family: "puhui-medium";
+}
+
+#choose_location{
+  margin-right: 40%;
+}
+
+#send_button{
+  background-color: #E36637;  
+  border-radius: 40rpx;
+  height: 80rpx;
+  color: white;
+  font-family: "puhui-regular";
+  font-weight: normal;
+  width: 100%;
+}

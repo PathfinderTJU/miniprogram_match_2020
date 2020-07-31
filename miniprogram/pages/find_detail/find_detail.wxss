@@ -1,0 +1,80 @@
+/* miniprogram/pages/find_detail/find_detail.wxss */
+page{
+  height: 100%;
+}
+
+.outside_block{
+  height: 100%;
+}
+
+.background_image{
+  height: 70%;
+  width: 100%;
+}
+
+.info_block{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 40%;
+  z-index: 200;
+  background-color: white;
+  border-top-left-radius: 75rpx;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.info{
+  width: 100%;
+  padding: 0 75rpx;
+}
+
+.name_time_block{
+  margin-top: 75rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name{
+  font-size: 28px;
+}
+
+.time{
+  height: 100%;
+  font-family: "puhui-medium";
+  color: #E36637;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.location_block{
+  font-family: "puhui-regular";
+  color: rgb(170, 170, 170);
+  margin-top: 15px;
+  display: flex;
+  font-size: 12px;
+}
+
+.describtion_block{
+  height: 60px;
+  margin-top: 15px;
+  line-height: 20px;
+  font-size: 12px;
+  overflow: auto;
+  text-align: justify;
+  -webkit-overflow-scrolling: touch
+}
+
+#return_button{
+  margin: 0 75rpx 75rpx 75rpx;
+  background-color: #E36637;  
+  border-radius: 40rpx;
+  height: 80rpx;
+  color: white;
+  font-family: "puhui-regular";
+  font-weight: normal;
+  width: 100%;
+}
